@@ -86,3 +86,21 @@ End Sub
             c = 0
         End If
     End Sub
+    
+    
+    --------------//-------------
+    
+   'data corresponde ao ano atual 
+    
+    
+'verify escalão
+    Dim cont1 as Integer
+    
+    data = Date.Today.Year
+    If Combobox1.SelectedIndex = -1 Then
+        MessageBox.Show("Preencher o escalão!!", "ERRO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+        cont1 = cont1 + 1
+    ElseIf data - info(i).data.year > val(Combobox1.Text.Remove(0, 4)) Or data - info(i).ano < val(Combobox1.text.Remove(0, 4)) - 1 Then
+        MessageBox.Show("O escalão não se encontra de acordo com a idade do jogador!!!", "ERRO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
+        cont1 = cont1 + 1
+    End If
