@@ -26,4 +26,63 @@
         newitem.SubItems.Add(info(jogador.chs))
         Listview2.Add(newitem)
         cont = jogador.nome.IndexOf(Form2.Txt_Nome.Text, contador)
-
+        
+        
+        
+Form1 
+'Pesquisar
+    For each jogador in info
+        newitem =  New ListViewItem(info(info.indexof(jogador).nome)
+        newitem.SubItems.Add(info(info.indexof(jogador).data.year)
+        newitem.SubItems.Add(info(info.indexof(jogador).data.month)
+        newitem.SubItems.Add(info(info.indexof(jogador).data.day)
+        newitem.SubItems.Add(info(info.indexof(jogador).escal)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+'Pesquisar_ORIGINAL_Form1
+    Dim newitem As ListViewItem
+         For Each jogador In info
+            newitem = New ListViewItem(info(Array.IndexOf(info, jogador)).nome)
+            newitem.SubItems.Add(info(Array.IndexOf(info, jogador)).data.Year)
+            newitem.SubItems.Add(info(Array.IndexOf(info, jogador)).data.Month)
+            newitem.SubItems.Add(info(Array.IndexOf(info, jogador)).escal)
+         Next
+    
+Pesquisar_ORIGINAL_Form2
+Btn_depesquisa.Click()
+        filtro(TextBox1.Text.Text, 0)
+        filtro(Combobox1.Text.Text, 1)
+        filtro(TextBox2.Text.Text, 2)
+        filtro(TextBox3.Text.Text, 3)
+        filtro(TextBox4.Text.Text, 4)
+        Pisturebox1.Image =  Form1.info.IndexOf(TetxBox1.Text).imagem)
+End Sub   
+   
+   
+   
+   
+   
+-FUNCTIONS
+(FORM2)
+    Sub org(string As String, index As Integer)
+        Dim i as Integer
+        
+        i = 0
+        If string <> "" Then
+            For i = 0 To ListView1.Items.Count - 1
+                If ListView1.Items(i).SubItems(index).Text.IndexOf(string) = -1 Then
+                    ListView1.Items.RemoveAt(i)
+                End If
+            Next
+            c = 0
+        End If
+    End Sub
