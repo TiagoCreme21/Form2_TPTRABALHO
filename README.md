@@ -17,3 +17,13 @@
         Next
     End Sub
     End Sub
+
+'pesquisar
+    For Each jogador In info
+        newitem = New ListViewItem(info(jogador.nome))
+        newitem.SubItems.Add(info(jogador.escalao))
+        newitem.SubItems.Add(info(jogador.data.ToString))
+        newitem.SubItems.Add(info(jogador.chs))
+        Listview2.Add(newitem)
+        cont = jogador.nome.IndexOf(Form2.Txt_Nome.Text, contador)
+
