@@ -104,3 +104,12 @@ End Sub
         MessageBox.Show("O escalão não se encontra de acordo com a idade do jogador!!!", "ERRO", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation)
         cont1 = cont1 + 1
     End If
+    
+   
+   'Para guardar as Infos Todas
+   If cont1 = 0 Then
+   'Guardar as merdas todas
+   ...
+   --.
+   End If
+   
