@@ -64,7 +64,7 @@ Btn_depesquisa.Click()
         filtro(TextBox2.Text.Text, 2)
         filtro(TextBox3.Text.Text, 3)
         filtro(TextBox4.Text.Text, 4)
-        Pisturebox1.Image =  Form1.info.IndexOf(TetxBox1.Text).imagem)
+        PictureBox1.Image =  Form1.info.IndexOf(TetxBox1.Text).imagem
 End Sub   
    
    
